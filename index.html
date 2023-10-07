@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head id="heading">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password Generator</title>
+    <script src="script.js"></script>
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Password Generator</h2>
+      <div class="settings">
+        <!--在这里用button会比较好-->
+        <div class="length">
+          <label>Password Length: </label>
+          <input type="number" id="length" min="4" max="20" value="20" />
+        </div>
+
+        <div>
+          <label for="uppercase"
+            ><input type="checkbox" class="option" id="uppercase" /> Include
+            uppercase letters</label
+          >
+        </div>
+
+        <div>
+          <label for="lowercase"
+            ><input type="checkbox" class="option" id="lowercase" /> Include
+            lowercase letters</label
+          >
+        </div>
+
+        <div>
+          <label for="number"
+            ><input type="checkbox" class="option" id="number" /> Include
+            numbers</label
+          >
+        </div>
+
+        <div>
+          <label for="special"
+            ><input type="checkbox" class="option" id="special" /> Include
+            special characters</label
+          >
+        </div>
+      </div>
+
+      <div class="user-input">
+        <p>Got secret words for the password? Spill 'em here!</p>
+        <input
+          type="text"
+          class="user-input"
+          id="keyword"
+          placeholder="Enter keywords here"
+        />
+      </div>
+
+      <div class="generateButton">
+        <button class="generateButton" id="generator" type="button">
+          Generate Password
+        </button>
+      </div>
+
+      <div class="output-container">
+        <span><p id="output"></p></span>
+      </div>
+    </div>
+    <!--container div-->
+  </body>
+</html>

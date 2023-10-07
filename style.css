@@ -1,0 +1,100 @@
+* {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 15;
+}
+
+*::selection {
+  color: white;
+  background-color: rgba(216, 112, 147, 0.776);
+}
+
+body {
+  background-color: #00000017;
+}
+
+.user-input {
+  position: flex;
+  margin: 0%;
+  padding: 2%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 500;
+  padding: 2%;
+  margin-top: 0%;
+  color: transparent;
+  -webkit-text-stroke-width: 0.1px;
+  -moz-text-stroke-width: 0px;
+  -webkit-text-stroke-color: #000000;
+  -moz-text-stroke-color: #333;
+  text-shadow: 3px 3px 2px hotpink;
+  z-index: 10000;
+}
+
+/*
+.output-container {
+  padding: 5%;
+  background-color: rgba(227, 118, 220, 0.655);
+}*/
+
+.container {
+  background-color: rgba(157, 111, 237, 0.355);
+  border-color: black;
+  border: 100px;
+  box-sizing: content-box;
+  width: 300px;
+  max-width: 100%;
+  padding: 25px;
+  position: relative;
+  box-shadow: inset 5px 5px 10px 1px rgba(18, 5, 13, 0.424),
+    -5px -5px 10px 3px rgb(255, 255, 255);
+
+  margin: auto;
+  margin-top: 5%;
+  text-align: center;
+  align-items: center;
+  border-radius: 2%;
+}
+
+.settings {
+  background-color: #ffffff;
+  box-shadow: 0px 5px 5px rgba(193, 47, 137, 0.424);
+  padding: 5%;
+  margin: 2%;
+  text-align: left;
+  line-height: 1.5;
+  z-index: 1000;
+}
+
+.length {
+  text-align: center;
+  padding: 1%;
+  z-index: 2000;
+}
+
+#generator {
+  margin: 5%;
+  background-color: #5a2ea090;
+  box-shadow: 0px 5px 10px rgba(216, 77, 163, 0.424);
+  /* Text color */
+  color: #ffffff;
+  /* Padding (spacing inside the button) */
+  padding: 10px 20px;
+  /* Border radius (rounded corners) */
+  border-radius: 5px;
+  /* Border (optional) */
+  border: none;
+  /* Text font and size */
+  font-size: 16px;
+  /* Cursor style on hover */
+  cursor: pointer;
+}
+
+/* Hover effect */
+#generator:hover {
+  background-color: #2017997b;
+  transform: translateY(-2px) scale(1.01, 1.01);
+  font-weight: 300;
+  box-shadow: 0px 10px 20px rgba(216, 77, 163, 0.424);
+}
